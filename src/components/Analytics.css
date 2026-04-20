@@ -1,0 +1,123 @@
+.analytics { display: flex; flex-direction: column; gap: 0; }
+
+.analytics-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.analytics-title {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.analytics-date-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 4px 8px;
+}
+
+.ana-year-nav, .ana-month-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ana-year-nav::after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 16px;
+  background: var(--border);
+  margin: 0 4px;
+}
+
+.ana-year {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text2);
+  min-width: 34px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.ana-month-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  min-width: 72px;
+  text-align: center;
+}
+
+.ana-nav-btn {
+  background: transparent;
+  border: none;
+  color: var(--text2);
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 4px;
+  line-height: 1;
+  transition: color 0.1s;
+}
+.ana-nav-btn:hover { color: var(--text); }
+
+.analytics-section {
+  margin-bottom: 28px;
+}
+
+.section-label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text3);
+  margin-bottom: 12px;
+}
+
+.chart-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+}
+
+.chart-tabs {
+  display: flex;
+  gap: 2px;
+  background: var(--bg4);
+  border-radius: 8px;
+  padding: 3px;
+  width: fit-content;
+  margin-bottom: 16px;
+}
+.chart-tab {
+  background: transparent;
+  border: none;
+  color: var(--text2);
+  font-family: var(--font);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.12s;
+}
+.chart-tab.active { background: var(--bg3); color: var(--text); border: 1px solid var(--border2); }
+.chart-tab:hover:not(.active) { color: var(--text); }
+
+.no-data {
+  text-align: center;
+  color: var(--text3);
+  font-size: 13px;
+  padding: 40px 0;
+}
